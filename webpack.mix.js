@@ -10,6 +10,7 @@ mix.jigsaw()
         require('postcss-import'),
         require('tailwindcss'),
     ])
+    .copy('srouce/_assets/images/*', 'images')
     .options({
         processCssUrls: false,
     })
